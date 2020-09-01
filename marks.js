@@ -16,7 +16,14 @@ var mar3 = prompt('please enter marks');
 var ma3 = parseInt(mar3);
 document.getElementById('mar3').innerHTML=ma3;
 
-var total = ma1+ma2+ma3;
+let myButton = document.querySelector('button');
+
+function total(){
+	var total = ma1+ma2+ma3;
+	document.getElementById('total').innerHTML="Total:"+total;
+
 var avg = (ma1+ma2+ma3)/3;
-document.getElementById('total').innerHTML=total;
-document.getElementById('avg').innerHTML=avg;
+
+document.getElementById('avg').innerHTML="Average:"+avg;
+}
+myButton.onclick = total;
