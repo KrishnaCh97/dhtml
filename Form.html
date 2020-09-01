@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Sign Up Page</title>
+
+</head>
+<body>
+	<form name="myForm" action="initial.html" onsubmit="return validateForm()" method="post">
+		<fieldset>
+			<legend class="center">Personal Info</legend>
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name">
+		<p id="namealert"></p><br>
+		<label for="phone">Phone Number:</label><br>
+		<input type="tel" id="phone" name="phone"><p id="phonealert"></p><br>
+		<label for="des">Description:</label><br>
+		<textarea id="des" name="description"></textarea><br>
+		
+		</fieldset>
+
+		<fieldset>
+			<legend>Academic Info</legend>
+		<label>Choice of Course</label>
+	<br>
+	
+		<input type="radio" id="bachelors" name="course" value="bachelors"><label for="bachelors">Bachelors</label><br>
+	
+		<input type="radio" id="masters" name="course" value="masters"><label for="masters">Masters</label><br>
+		<br>
+		<label>Subject Interests</label>
+		<br>
+		<input type="checkbox" name="SubInterest1" id="SubInterest1" value="electrical">
+		<label for="SubInterest1">Electrical</label><br>
+		<input type="checkbox" name="SubInterest2" id="SubInterest2" value="computer">
+		<label for="SubInterest2">Computer Science</label><br>
+		<input type="checkbox" name="SubInterest3" id="SubInterest3" value="mechanical">
+		<label for="SubInterest2">Mechanical</label>
+		<p id="checkalert"></p>
+		</fieldset>
+
+		<input type="submit" value="submit">
+	<script type="text/javascript" src="form.js"></script>
+	</form>
+</body>
+</html>
