@@ -1,21 +1,20 @@
-var num = prompt("Enter a number");
-var n = parseInt(num);
-console.log(n);
+
 function numcheck() {
-	
-	if(n>=10){
-		if(n<=100){
-			document.getElementById('10-100').innerHTML = n +" is between 10 and 100";
-			return true;
-		}
-		else
-			document.getElementById('10-100').innerHTML = n + " is not between 10 and 100";
-		alert("Enter a number between 10 and 100");
-		return false
-	}else
-			document.getElementById('10-100').innerHTML = n + " is not between 10 and 100";
-			alert("Enter a number between 10 and 100");
-			return false;
+	var num = prompt("Enter a number");
+var n = parseInt(num);
+document.getElementById('num').innerHTML = n ;
+console.log(n);
+var message = document.getElementById('10-100');
+try{
+	if(n < 10) throw "Less than 10";
+	if(n > 100) throw "Greater than 100";
+}
+catch(err){
+	message.innerHTML = "Number is "+ err;
+}
+finally{
+	num = "";
+}
 }
 function fibonacci(){
 	if(numcheck()){
