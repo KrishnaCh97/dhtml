@@ -37,3 +37,20 @@ function fibonacci(){
 $( "button" ).dblclick(function() {
   $( "#book" ).toggle();
   });
+$(document).ready(function(){
+  $("#div1").click(function(){
+    $.get("get.txt", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
+$(document).ready(function(){
+  $("#div2").click(function(){
+    $.post("post.txt",{
+    name: "Donald Duck",
+    city: "Duckburg"
+  }, function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+});
