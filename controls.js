@@ -1,7 +1,8 @@
 
-function numcheck() {
 	var num = prompt("Enter a number");
 var n = parseInt(num);
+function numcheck() {
+
 document.getElementById('num').innerHTML = n ;
 console.log(n);
 var message = document.getElementById('10-100');
@@ -17,7 +18,7 @@ finally{
 }
 }
 function fibonacci(){
-	if(numcheck()){
+	
 	var n1 = 0;
 	var n2 = 1;
 	console.log(n1);
@@ -31,6 +32,6 @@ function fibonacci(){
 		console.log(n3);
 	}
 	document.getElementById('fib').innerHTML = str;
-	}
+	
 
 }
