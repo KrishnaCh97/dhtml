@@ -32,6 +32,11 @@ function fibonacci(){
 		console.log(n3);
 	}
 	document.getElementById('fib').innerHTML = str;
-	
 
 }
+$( "#clickme" ).click(function() {
+  $( "#book" ).hide( "slow" );
+  });
+$( "#shower" ).click(function() {
+  $( "#book" ).show(" slow ");
+});
