@@ -34,9 +34,6 @@ function fibonacci(){
 	document.getElementById('fib').innerHTML = str;
 
 }
-$( "#clickme" ).click(function() {
-  $( "#book" ).hide( "slow" );
+$( "button" ).dblclick(function() {
+  $( "#book" ).toggle();
   });
-$( "#shower" ).click(function() {
-  $( "#book" ).show(" slow ");
-});
